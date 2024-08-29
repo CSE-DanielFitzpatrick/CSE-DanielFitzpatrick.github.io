@@ -1,0 +1,21 @@
+body{
+    background-color: antiquewhite;
+    color: maroon;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main{
+    display: inline;
+    margin-right: 20px;
+    a:link, a:visited {
+        background-color: darkred;
+        color: white;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      }
+      
+      a:hover, a:active {
+        background-color: maroon;
+      }
+}

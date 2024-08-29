@@ -1,0 +1,70 @@
+/* Structure */
+body {
+    background:url(https://th.bing.com/th/id/OIP.XFYlLjFiehvtwFVxu8IgagHaEK?w=294&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7) ;
+    font-family: sans-serif;
+    
+
+}
+
+#content{
+    margin:auto;
+    width: 60%;
+    background-color: whitesmoke;
+    color: blue;
+}
+/*header*/
+nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li{
+    display: inline;
+    margin-right: 20px;
+    a:link, a:visited {
+        background-color: skyblue;
+        color: white;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      }
+      
+      a:hover, a:active {
+        background-color: blue;
+      }
+
+}
+
+/*Images*/
+img{
+    border: 5px solid #3498db;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/* Table */
+table {
+    width: 100%;
+  }
+table, th, td {
+    border: 1px solid;
+  }
+  th {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+tr {
+    background-color: #ecf0f1;
+}
