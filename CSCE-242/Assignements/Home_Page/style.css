@@ -3,19 +3,41 @@ body{
     color: maroon;
     font-family: Arial, Helvetica, sans-serif;
 }
-#main{
+#assignments{
+    color: antiquewhite;
     display: inline;
     margin-right: 20px;
     a:link, a:visited {
         background-color: darkred;
-        color: white;
+        color: antiquewhite;
         padding: 14px 25px;
         text-align: center;
         text-decoration: none;
-        display: inline-block;
+        display: block;
       }
       
       a:hover, a:active {
         background-color: maroon;
       }
+    width:95%;
+    margin:auto;
+    background: maroon(255,255,255,0.7);
+    border-radius:5px;
+}
+main {
+    display: flex;
+    flex: 1;
+    margin: 1em;
+}
+
+section {
+    flex: 1;
+    margin-right: 1em;
+    background-color: maroon;
+    display: block;
+}
+/*Images*/
+img{
+    width: 300px;
+    height: 150px;
 }
