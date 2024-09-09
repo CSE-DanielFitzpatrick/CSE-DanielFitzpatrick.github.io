@@ -1,0 +1,202 @@
+/*Structure*/
+body {
+    background-color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#main-img {
+    width: 400px;
+    height: 150px;
+}
+
+p {
+    text-align: center;
+}
+
+.flexing1 {
+    background-color: brown;
+    color: white;
+    padding: 40px;
+
+}
+
+.columns {
+    display:flex;
+}
+
+.one {
+    flex:1;
+}
+h2 {
+    text-align: center;
+}
+
+h3 {
+    padding-right: 0;
+}
+
+.flexing2 {
+    background-color: white;
+    color: maroon;
+}
+
+.center {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.stack{
+    display: block;
+    margin-left: 100px;
+    margin-right: 100px;    
+}
+
+#main-footer {
+    padding: 5px;
+}
+
+#main-header {
+    background-color: black;
+}
+
+#main-footer {
+    background-color: maroon;
+}
+
+button {
+    
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    border-color: #fff;
+
+}
+
+#edu{
+    text-align: center;
+    h1{
+        color: maroon;
+    }
+    p{
+        color: black;
+    }
+
+}
+
+#paying{
+    h1{
+        color: maroon;
+    }
+    p{
+        color: black;
+    }
+    text-align: center;
+}
+
+#last {
+    background-color: black;
+    color: white;
+    padding: 40px;
+
+}
+
+#bottom{
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+/*Typography*/
+
+header {
+    background-color: black;
+}
+
+h1 {
+    
+    color:white;
+    font-size: xx-large;
+    padding:5px;
+    margin: 5px;
+    border-radius: 5px;
+   /* margin-top: -5%*/
+    
+}
+
+.top-nav a:hover {
+    background-color: #ddd;
+}
+#main-nav ul{
+    padding-left: 0;
+    text-align: center;
+    margin-top: 0%;
+}
+
+#main-nav a {
+        text-decoration: none;
+        color: white;
+        font-size: x-large;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+#main-nav a:hover {
+    background-color: red;
+}
+
+input {
+    background-color: black;
+}
+
+.flexing4{
+    color: maroon;
+}
+
+
+#main-nav li {
+    list-style-type: none;
+    padding: 5px;
+    background-color: brown;
+}
+
+#main-header a:hover {
+    color: white;
+}
+#main-footer,
+#main-footer a {
+    color: white;
+}
+
+#main-footer ul {
+    padding-left: 1%;
+}
+
+#main-footer li {
+    list-style-type: none;
+}
+
+#main-footer a {
+    text-decoration: none;
+}
+/*Larger Resolution*/
+
+@media only screen and (min-width: 768px) {
+    .search ul,
+    .flex-c, #main-nav ul, .flexing1, .flexing2{
+        display: flex;
+    }
+    
+    #main-nav li {
+        flex:1;
+    }
+    #main-nav ul {
+        text-align: center;
+    }
+
+
+    .flex-c {
+        justify-content: space-between;
+    }
+}
