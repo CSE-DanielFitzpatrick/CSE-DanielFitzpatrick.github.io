@@ -1,79 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
-    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="menu">
-        <h1>Dinner and A Movie</h1>
+    <header>
+        <h1>Menu</h1>
         <nav>
             <ul>
-                <li><a href="home.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="locations.html">Locations</a></li>
                 <li><a href="movies.html">Movies</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="rental.html">Rental</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="rent-theater.html" class="active">Rent a Theater</a></li>
             </ul>
         </nav>
-        <h2>Menu</h2>
-        <div class="menu-section">
-            <div class="category">
-                <h2>Appetizers</h2>
-                <ul>
-                    <li>Item 1 - $10.00</li>
-                    <li>Item 2 - $8.00</li>
-                    <li>Item 3 - $12.00</li>
-                    <li>Item 4 - $10.00</li>
-                    <li>Item 5 - $11.00</li>
-                    <li>Item 6 - $8.00</li>
-                    <li>Item 7 - $12.00</li>
-                    <li>Item 8 - $10.00</li>
-                </ul>
-            </div>
+    </header>
 
-            <div class="category">
-                <h2>Salads</h2>
-                <ul>
-                    <li>Item 1 - $10.00</li>
-                    <li>Item 2 - $8.00</li>
-                    <li>Item 3 - $12.00</li>
-                    <li>Item 4 - $10.00</li>
-                    <li>Item 5 - $11.00</li>
-                    <li>Item 6 - $8.00</li>
-                    <li>Item 7 - $12.00</li>
-                    <li>Item 8 - $10.00</li>
-                </ul>
-            </div>
-
-            <div class="category">
-                <h2>Entrees</h2>
-                <ul>
-                    <li>Item 1 - $17.00</li>
-                    <li>Item 2 - $18.00</li>
-                    <li>Item 3 - $19.00</li>
-                    <li>Item 4 - $20.00</li>
-                    <li>Item 5 - $21.00</li>
-                    <li>Item 6 - $14.00</li>
-                    <li>Item 7 - $22.00</li>
-                    <li>Item 8 - $13.00</li>
-                    <li>Item 9 - $26.00</li>
-                    <li>Item 10 - $15.00</li>
-                    <li>Item 11 - $17.00</li>
-                    <li>Item 12 - $19.00</li>
-                    <li>Item 13 - $19.00</li>
-                    <li>Item 14 - $18.00</li>
-                    <li>Item 15 - $17.00</li>
-                    <li>Item 16 - $16.00</li>
-                </ul>
-            </div>
-
-            <div class="drinks">
-                <h2>Drinks</h2>
-                <p>Sodas, Water, Lemonade, Iced Tea<br>(Free Refills)</p>
-            </div>
+    <section class="menu">
+        <div class="menu-column">
+            <h3>Appetizers</h3>
+            <p>Item 1 - $10.00</p>
+            <p>Item 2 - $8.00</p>
+            <!-- Add more items -->
         </div>
-    </div>
+        <div class="menu-column">
+            <h3>Salads</h3>
+            <p>Item 1 - $10.00</p>
+            <p>Item 2 - $8.00</p>
+            <!-- Add more items -->
+        </div>
+        <div class="menu-column">
+            <h3>Entrees</h3>
+            <p>Item 1 - $17.00</p>
+            <p>Item 2 - $18.00</p>
+            <!-- Add more items -->
+        </div>
+        <div class="menu-column">
+            <h3>Drinks</h3>
+            <p>Sodas, Water, Lemonade, Iced Tea - Free Refills</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Dinner and A Movie</p>
+    </footer>
 </body>
 </html>

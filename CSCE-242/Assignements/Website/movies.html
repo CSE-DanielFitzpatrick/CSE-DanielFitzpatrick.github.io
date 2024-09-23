@@ -1,88 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Movies - Currently Playing</title>
-    <link rel="stylesheet" href="movies.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Dinner and A Movie</h1>
+        <h1>Movies - Currently Playing</h1>
         <nav>
             <ul>
-                <li><a href="home.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="locations.html">Locations</a></li>
-                <li><a href="#">Movies</a></li>
+                <li><a href="movies.html">Movies</a></li>
                 <li><a href="menu.html">Menu</a></li>
-                <li><a href="rental.html">Rental</a></li>
+                <li><a href="rent-theater.html" class="active">Rent a Theater</a></li>
             </ul>
         </nav>
-        <h2>Movies - Currently Playing</h2>
     </header>
 
-    <main>
-        <div class="movies-grid">
-            <div class="movie">
-                <div class="image-placeholder"></div>
-                <h2>Movie 1</h2>
-                <p>Times:</p>
-                <div class="times">
-                    <span>7:00</span>
-                    <span>9:00</span>
-                    <span>11:15</span>
-                </div>
-            </div>
-            <div class="movie">
-                <div class="image-placeholder"></div>
-                <h2>Movie 2</h2>
-                <p>Times:</p>
-                <div class="times">
-                    <span>8:45</span>
-                    <span>10:00</span>
-                    <span>11:45</span>
-                </div>
-            </div>
-            <div class="movie">
-                <div class="image-placeholder"></div>
-                <h2>Movie 3</h2>
-                <p>Times:</p>
-                <div class="times">
-                    <span>8:00</span>
-                    <span>9:00</span>
-                    <span>11:00</span>
-                </div>
-            </div>
-            <div class="movie">
-                <div class="image-placeholder"></div>
-                <h2>Movie 4</h2>
-                <p>Times:</p>
-                <div class="times">
-                    <span>9:30</span>
-                    <span>10:00</span>
-                    <span>12:15</span>
-                </div>
-            </div>
-            <div class="movie">
-                <div class="image-placeholder"></div>
-                <h2>Movie 5</h2>
-                <p>Times:</p>
-                <div class="times">
-                    <span>7:30</span>
-                    <span>8:45</span>
-                    <span>10:00</span>
-                </div>
-            </div>
-            <div class="movie">
-                <div class="image-placeholder"></div>
-                <h2>Movie 6</h2>
-                <p>Times:</p>
-                <div class="times">
-                    <span>6:30</span>
-                    <span>7:45</span>
-                    <span>9:15</span>
-                </div>
-            </div>
+    <section class="movies">
+        <div class="movie">
+            <div class="image-placeholder"></div>
+            <p>Movie 1</p>
+            <p>Times: 7:30, 9:30, 11:15</p>
         </div>
-    </main>
+        <div class="movie">
+            <div class="image-placeholder"></div>
+            <p>Movie 2</p>
+            <p>Times: 8:45, 10:00, 11:45</p>
+        </div>
+        <div class="movie">
+            <div class="image-placeholder"></div>
+            <p>Movie 3</p>
+            <p>Times: 9:00, 11:30</p>
+        </div>
+        <div class="movie">
+            <div class="image-placeholder"></div>
+            <p>Movie 4</p>
+            <p>Times: 9:30, 10:30, 12:15</p>
+        </div>
+        <div class="movie">
+            <div class="image-placeholder"></div>
+            <p>Movie 5</p>
+            <p>Times: 7:30, 8:45, 10:00</p>
+        </div>
+        <div class="movie">
+            <div class="image-placeholder"></div>
+            <p>Movie 6</p>
+            <p>Times: 6:30, 7:45, 9:15</p>
+        </div>
+    </section>
 
+    <footer>
+        <p>&copy; 2024 Dinner and A Movie</p>
+    </footer>
 </body>
 </html>
