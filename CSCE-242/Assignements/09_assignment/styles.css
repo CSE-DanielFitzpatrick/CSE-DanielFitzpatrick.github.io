@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+h1, h2 {
+    color: #4a4a4a;
+}
+
+#image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+#image-container img {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+
+p#image-description {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #666;
+}
