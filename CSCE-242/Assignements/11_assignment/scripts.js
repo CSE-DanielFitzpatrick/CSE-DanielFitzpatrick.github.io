@@ -10,31 +10,27 @@ class Bird {
         this.image = image;
     }
 
-    // Method to generate bird card section
-    getSection() {
-        return `
-            <div class="bird-card" data-name="${this.name}">
-                <img src="${this.image}" alt="${this.name}">
-                <h4>${this.name}</h4>
-            </div>
-        `;
-    }
+    //  function to generate bird card section
+    getSection = () => `
+        <div class="bird-card" data-name="${this.name}">
+            <img src="${this.image}" alt="${this.name}">
+            <h4>${this.name}</h4>
+        </div>
+    `;
 
-    // Method to get full details
-    getExpandedSection() {
-        return {
-            name: this.name,
-            size: this.size,
-            lifespan: this.lifespan,
-            food: this.food,
-            habitat: this.habitat,
-            fact: this.fact,
-            image: this.image
-        };
-    }
+    //  function to get full details
+    getExpandedSection = () => ({
+        name: this.name,
+        size: this.size,
+        lifespan: this.lifespan,
+        food: this.food,
+        habitat: this.habitat,
+        fact: this.fact,
+        image: this.image
+    });
 }
 
-
+// Array of bird objects
 const birds = [
     new Bird(
         'Hummingbird',
@@ -74,16 +70,16 @@ const birds = [
     )
 ];
 
-// Function to display birds
-function displayBirds() {
+//  function to display birds
+const displayBirds = () => {
     const birdGrid = document.querySelector('.bird-grid');
     birds.forEach(bird => {
         birdGrid.innerHTML += bird.getSection();
     });
 }
 
-// Function to open modal with bird details
-function openModal(bird) {
+//  function to open modal with bird details
+const openModal = bird => {
     document.getElementById('bird-name').innerText = bird.name;
     document.getElementById('bird-size').innerText = bird.size;
     document.getElementById('bird-lifespan').innerText = bird.lifespan;
@@ -96,17 +92,17 @@ function openModal(bird) {
 }
 
 // Event listener to close modal
-document.querySelector('.close').addEventListener('click', function() {
+document.querySelector('.close').addEventListener('click', () => {
     document.getElementById('bird-modal').style.display = 'none';
 });
 
-// Event listener to click on bird cards
-document.addEventListener('DOMContentLoaded', function() {
+//  function for DOMContentLoaded event listener
+document.addEventListener('DOMContentLoaded', () => {
     displayBirds();
 
     document.querySelectorAll('.bird-card').forEach(card => {
-        card.addEventListener('click', function() {
-            const birdName = this.getAttribute('data-name');
+        card.addEventListener('click', () => {
+            const birdName = card.getAttribute('data-name');
             const bird = birds.find(b => b.name === birdName);
             openModal(bird.getExpandedSection());
         });
