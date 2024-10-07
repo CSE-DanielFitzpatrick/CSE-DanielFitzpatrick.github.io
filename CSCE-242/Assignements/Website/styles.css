@@ -1,262 +1,248 @@
-body {
-    font-family: 'Arial', sans-serif;
+/* General Styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+header {
+    background-color: #1a73e8; /* Blue */
+    padding: 20px;
+    color: #fff;
     text-align: center;
-    background-color: #f0f5f9; 
-    color: #333; 
 }
 
 header h1 {
-    font-family: 'Georgia', serif;
-    font-size: 3em;
-    margin: 20px;
-    color: #4a90e2; 
+    margin-bottom: 10px;
+    font-size: 2.8em;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
+}
+
+nav ul.menu {
     display: flex;
     justify-content: center;
-    background-color: #ffffff; 
-    border-bottom: 2px solid #4a90e2; 
-    margin-bottom: 20px;
+    gap: 15px;
 }
 
-nav ul li {
-    margin: 0 20px;
+nav ul.menu li {
+    margin: 0 15px;
 }
 
-nav ul li a {
+nav ul.menu li a {
     text-decoration: none;
-    font-weight: bold;
-    color: #333; 
-    font-family: 'Arial', sans-serif;
+    color: #fff;
+    font-size: 1.3em;
+    padding: 10px 15px;
 }
 
-nav ul li a.active {
-    color: #d46b6b; /* Red color for active links */
-}
-
-nav ul li a:hover {
-    color: #4a90e2; /* Light blue for hover links */
-}
-
-section {
-    padding: 20px;
-    background-color: #fff; /* White background for sections */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    margin: 20px auto;
-    width: 80%; /* Limit width for a centered layout */
-}
-
-.image-placeholder {
-    width: 150px;
-    height: 150px;
-    background-color: #d6eaf8; /* Light pastel blue for placeholder images */
-    margin: 0 auto;
-    border: 1px solid #4a90e2; /* Light blue border */
-}
-
-footer {
-    margin-top: 40px;
-    font-size: 0.8em;
-    color: #666; /* Medium gray text */
-    background-color: #f0f5f9;
-    padding: 20px;
-    border-top: 2px solid #4a90e2;
-}
-
-/* About Section */
-.about {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 20px;
-}
-
-.about-text {
-    margin-left: 20px;
-    text-align: left;
-}
-
-.about-text h2 {
-    font-family: 'Georgia', serif;
-    color: #4a90e2; /* Light blue heading */
-    font-size: 2em;
-}
-
-/* Locations Section */
-.locations {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.location {
-    width: 200px;
-    margin: 20px;
-    text-align: center;
-}
-
-.location p {
-    color: #333;
-}
-
-/* Movies Section */
-.movies {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.movie {
-    width: 200px;
-    margin: 20px;
-    text-align: center;
-}
-
-.movie p {
-    color: #333;
-}
-
-.movie .image-placeholder {
-    width: 100px;
-    height: 150px;
-    background-color: #d6eaf8; /* Light pastel blue */
-    margin: 0 auto;
-    border: 1px solid #4a90e2;
-}
-
-/* Menu Section */
-.menu {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.menu-column {
-    width: 200px;
-    margin: 20px;
-    text-align: left;
-}
-
-.menu-column h3 {
-    font-family: 'Georgia', serif;
-    color: #d46b6b; /* Red color for section headings */
-    font-size: 1.5em;
-    border-bottom: 2px solid #d46b6b; /* Red underline */
-    padding-bottom: 5px;
-}
-
-.menu-column p {
-    color: #333; /* Dark gray text */
-    margin: 10px 0;
-}
-
-.menu-column p span {
-    float: right;
-    color: #666; /* Lighter gray for prices */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    section {
-        width: 95%; /* Make sections full-width on smaller screens */
-    }
-
-    .about {
-        flex-direction: column;
-    }
-
-    .menu {
-        flex-direction: column;
-    }
-
-    .movies, .locations {
-        flex-direction: column;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin-bottom: 10px;
-    }
-}
-/* Rent a Theater Section */
-.rent-theater {
-    text-align: left;
-    padding: 20px;
-    max-width: 600px;
-    margin: 0 auto;
+nav ul.menu li a:hover {
     background-color: #fff;
+    color: #1a73e8;
     border-radius: 8px;
+}
+
+.content {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.rent-theater h2 {
-    font-family: 'Georgia', serif;
-    color: #4a90e2; /* Light blue for the heading */
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-.rent-theater p {
-    font-size: 1em;
-    color: #666;
+.content h2 {
+    font-size: 2.5em;
     margin-bottom: 20px;
+    color: #1a73e8;
 }
 
-.theater-form {
-    display: flex;
-    flex-direction: column;
+.content p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #555;
 }
 
-.theater-form label {
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #333;
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
 }
 
-.theater-form input, 
-.theater-form textarea {
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1em;
-    color: #333;
-    background-color: #f9f9f9;
-}
-
-.theater-form input:focus,
-.theater-form textarea:focus {
-    border-color: #4a90e2; /* Light blue focus border */
-    outline: none;
-}
-
-.theater-form button {
-    background-color: #4a90e2; /* Light blue button */
+footer {
+    background-color: #1a73e8;
     color: white;
-    padding: 10px 20px;
-    font-size: 1em;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 5px;
+    font-size: 1.1em;
+}
+
+/* Button Styles */
+button {
+    background-color: #ff6347; /* Tomato Red */
+    color: white;
+    padding: 12px 20px;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 1.1em;
     transition: background-color 0.3s ease;
 }
 
-.theater-form button:hover {
-    background-color: #357ABD; /* Darker blue on hover */
+button:hover {
+    background-color: #e55340;
 }
 
-/* Responsive Design */
-@media (max-width: 600px) {
-    .rent-theater {
-        width: 90%; /* Adjust width for mobile screens */
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content p {
+    text-align: left;
+    padding: 10px;
+    color: #333;
+}
+
+/* --- Media Queries for Smaller Screens --- */
+@media (max-width: 768px) {
+    nav ul.menu {
+        display: none;
+    }
+
+    .dropdown-menu {
+        display: block;
+        background-color: #1a73e8;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;
+        font-size: 1.5em;
+    }
+
+    .dropdown-content-mobile {
+        display: none;
+        background-color: #fff;
+        padding: 12px;
+        position: absolute;
+        width: 100%;
+        left: 0;
+    }
+
+    .dropdown-content-mobile a {
+        display: block;
+        padding: 10px;
+        color: #1a73e8;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .dropdown-content-mobile a:hover {
+        background-color: #f0f0f0;
+    }
+
+    .dropdown-menu.active + .dropdown-content-mobile {
+        display: block;
+    }
+}
+
+/* For smaller devices */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    .content h2 {
+        font-size: 2em;
+    }
+
+    button {
+        font-size: 1em;
+    }
+
+    footer {
+        font-size: 1em;
+    }
+}
+/* Movies Grid Layout */
+.movies-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.movie-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.movie-card h3 {
+    margin-bottom: 10px;
+    color: #1a73e8;
+}
+
+.movie-card p {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.movie-card button {
+    margin: 5px;
+}
+
+/* For Mobile View */
+@media (max-width: 768px) {
+    .movie-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .movie-card {
+        width: 100%;
     }
 }

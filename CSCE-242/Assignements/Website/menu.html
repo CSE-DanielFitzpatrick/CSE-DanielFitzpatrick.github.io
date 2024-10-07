@@ -3,50 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
+    <title>Menu - Dinner and a Movie</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Menu</h1>
+        <h1>Dinner and a Movie</h1>
         <nav>
-            <ul>
+            <ul class="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="locations.html">Locations</a></li>
                 <li><a href="movies.html">Movies</a></li>
                 <li><a href="menu.html">Menu</a></li>
-                <li><a href="rent-theater.html" class="active">Rent a Theater</a></li>
+                <li><a href="rent.html">Rent a Theater</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="menu">
-        <div class="menu-column">
-            <h3>Appetizers</h3>
-            <p>Item 1 - $10.00</p>
-            <p>Item 2 - $8.00</p>
-            <!-- Add more items -->
+    <section class="content">
+        <h2>Our Menu</h2>
+        <p>Choose from our carefully curated selection of appetizers, entrees, and desserts:</p>
+        <ul>
+            <li><strong>Appetizers:</strong> $8 - $12</li>
+            <li><strong>Entrees:</strong> $15 - $25</li>
+            <li><strong>Desserts:</strong> $6 - $10</li>
+        </ul>
+        <h3>Seasonal & Exclusive Items</h3>
+        <div class="dropdown">
+            <button class="dropbtn">View Seasonal Menu</button>
+            <div class="dropdown-content">
+                <p>Item 1: Seasonal Salad - $12</p>
+                <p>Item 2: Exclusive Steak - $30</p>
+            </div>
         </div>
-        <div class="menu-column">
-            <h3>Salads</h3>
-            <p>Item 1 - $10.00</p>
-            <p>Item 2 - $8.00</p>
-            <!-- Add more items -->
-        </div>
-        <div class="menu-column">
-            <h3>Entrees</h3>
-            <p>Item 1 - $17.00</p>
-            <p>Item 2 - $18.00</p>
-            <!-- Add more items -->
-        </div>
-        <div class="menu-column">
-            <h3>Drinks</h3>
-            <p>Sodas, Water, Lemonade, Iced Tea - Free Refills</p>
-        </div>
+        <img src="images/menu.jpeg" alt="Food Menu">
     </section>
 
     <footer>
-        <p>&copy; 2024 Dinner and A Movie</p>
+        <p>&copy; 2024 Dinner and a Movie | All Rights Reserved</p>
     </footer>
 </body>
 </html>

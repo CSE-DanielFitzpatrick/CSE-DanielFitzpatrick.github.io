@@ -3,58 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movies</title>
+    <title>Movies - Dinner and a Movie</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Movies - Currently Playing</h1>
+        <h1>Dinner and a Movie</h1>
         <nav>
-            <ul>
+            <ul class="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="locations.html">Locations</a></li>
                 <li><a href="movies.html">Movies</a></li>
                 <li><a href="menu.html">Menu</a></li>
-                <li><a href="rent-theater.html" class="active">Rent a Theater</a></li>
+                <li><a href="rent.html">Rent a Theater</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="movies">
-        <div class="movie">
-            <div class="image-placeholder"></div>
-            <p>Movie 1</p>
-            <p>Times: 7:30, 9:30, 11:15</p>
-        </div>
-        <div class="movie">
-            <div class="image-placeholder"></div>
-            <p>Movie 2</p>
-            <p>Times: 8:45, 10:00, 11:45</p>
-        </div>
-        <div class="movie">
-            <div class="image-placeholder"></div>
-            <p>Movie 3</p>
-            <p>Times: 9:00, 11:30</p>
-        </div>
-        <div class="movie">
-            <div class="image-placeholder"></div>
-            <p>Movie 4</p>
-            <p>Times: 9:30, 10:30, 12:15</p>
-        </div>
-        <div class="movie">
-            <div class="image-placeholder"></div>
-            <p>Movie 5</p>
-            <p>Times: 7:30, 8:45, 10:00</p>
-        </div>
-        <div class="movie">
-            <div class="image-placeholder"></div>
-            <p>Movie 6</p>
-            <p>Times: 6:30, 7:45, 9:15</p>
+    <section class="content">
+        <h2>Now Playing</h2>
+
+        <div class="movies-grid">
+            <!-- Movie 1 -->
+            <div class="movie-card">
+                <img src="images/action.jpeg" alt="Movie 1 Poster">
+                <h3>Action Thriller</h3>
+                <p>Showtimes:</p>
+                <button>7:00 PM</button> <button>9:00 PM</button>
+            </div>
+
+            <!-- Movie 2 -->
+            <div class="movie-card">
+                <img src="images/romcom.jpeg" alt="Movie 2 Poster">
+                <h3>Romantic Comedy</h3>
+                <p>Showtimes:</p>
+                <button>6:30 PM</button> <button>8:30 PM</button>
+            </div>
+
+            <!-- Movie 3 -->
+            <div class="movie-card">
+                <img src="images/scifi.jpeg" alt="Movie 3 Poster">
+                <h3>Sci-Fi Adventure</h3>
+                <p>Showtimes:</p>
+                <button>5:00 PM</button> <button>7:30 PM</button>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Dinner and A Movie</p>
+        <p>&copy; 2024 Dinner and a Movie | All Rights Reserved</p>
     </footer>
 </body>
 </html>
