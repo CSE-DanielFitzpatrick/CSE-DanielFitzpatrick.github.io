@@ -3,49 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rent a Theater - Dinner and a Movie</title>
+    <title>Rent a Theater | Dinner and a Movie</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Dinner and a Movie</h1>
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="locations.html">Locations</a></li>
-                <li><a href="movies.html">Movies</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="rent.html">Rent a Theater</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section class="content">
-        <h2>Rent a Theater</h2>
-        <p>Host your private event! Fill out the form below to rent out one of our luxury theaters:</p>
-        <form action="#" method="POST">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+<header>
+    <img src="logo.jpeg" alt="Dinner and a Movie Logo" class="logo">
+    <h1>Host Your Private Event</h1>
+</header>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+<nav>
+    <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="locations.html">Locations</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="rent.html">Rent a Theater</a></li>
+    </ul>
+</nav>
 
-            <label for="date">Event Date:</label>
-            <input type="date" id="date" name="date" required>
+<section class="rent-info">
+    <h2>Private Theater Rentals</h2>
+    <p>Imagine having an entire theater for just you and your guests. Whether you're celebrating a birthday, hosting a corporate event, or planning a special occasion, we can help create an unforgettable experience.</p>
+    
+    <h3>Our Packages Include:</h3>
+    <ul>
+        <li>Private screening room rental for up to 50 guests</li>
+        <li>Gourmet catering options, from appetizers to full meals</li>
+        <li>Personalized movie selection or private premiere</li>
+        <li>State-of-the-art audio and visual equipment</li>
+        <li>Custom decorations and setup based on your theme</li>
+    </ul>
 
-            <label for="location">Location:</label>
-            <select id="location" name="location" required>
-                <option value="location1">Location 1</option>
-                <option value="location2">Location 2</option>
-                <option value="location3">Location 3</option>
-            </select>
+    <h3>Additional Services:</h3>
+    <ul>
+        <li>Photography and videography packages</li>
+        <li>Custom cakes and desserts</li>
+        <li>Event staff, including servers and event coordinators</li>
+        <li>Red carpet treatment with personalized event invitations</li>
+    </ul>
 
-            <button type="submit">Submit Request</button>
-        </form>
-    </section>
+    <h3>Contact Us to Plan Your Event</h3>
+    <form action="#" method="post">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
 
-    <footer>
-        <p>&copy; 2024 Dinner and a Movie | All Rights Reserved</p>
-    </footer>
-</body>
-</html>
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="location">Preferred Location:</label>
+        <select id="location" name="location">
+            <option value="ny">New York</option>
+            <option value="la">Los Angeles</option
