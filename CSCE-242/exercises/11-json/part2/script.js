@@ -1,6 +1,5 @@
-const getShoes = async() => {
-    const url = "";
-
+const getBrew = async() => {
+    const url = "https://api.openbrewerydb.org/breweries"
     try {
         const response = await fetch("https://api.openbrewerydb.org/breweries");
         return response.json();
@@ -9,7 +8,7 @@ const getShoes = async() => {
     }
 };
 
-const getBrew = async() => {
+const showBrew = async() => {
     const brews = await getBrew();
     
     brews.forEach(()=>{
